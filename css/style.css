@@ -197,25 +197,35 @@ main h1 {
 /* TOUR */
 
 .section__tour {
-    font-size: 3rem;
-    /* padding: 3; */
     display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 3rem;
+    align-self: center;
+    justify-self: center;
+    align-items: baseline;
 }
 
+
+
 .section__tour ul li{
-    padding: 3rem;
-    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* padding: 3rem; */
+    /* text-align: center; */
     font-family: 'Roboto Mono', monospace;
     list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    /* margin: 0 auto; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
 
 #tour__lugar{
     color: orangered;
+    
 }
 
 .section__tour button {
