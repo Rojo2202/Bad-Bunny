@@ -1,121 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bad Bunny - Tienda</title>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/d2704f2282.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d2704f2282.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-  <!-- BOTONERA -->
-  <header>
-    <!-- Logo -->
-    <a href="../index.html#home"><img src="../img/logo-nav.png" alt="logo" id="header__logo" ></a>
-    <nav class = "header__nav">
-        <ul>
-            <li>
-                <a href="../index.html">HOME</a>
-            </li>
-            <li>
-                <a href="musica.html">MUSICA</a>
-            </li>
-            <li>
-                <a href="tour.html">TOUR</a>
-            </li>
-            <li>
-                <a href="tienda.html">TIENDA</a>
-            </li>
-            <li>
-                <a href="contacto.html">CONTACTO</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              id="header__logo"
+              src="/img/logo-nav.png"
+              alt="logo bad bunny"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content end">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="musica.html">MUSICA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">TIENDA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tour.html">TOUR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- MAIN -->
-        <main>
-                <h1>TIENDA</h1>
-                <section class = "card__group">
-                    <!-- BUZO -->
-                    <article class = "card">
-                            <img src="../img/tienda/buzo.jpg" alt="buzo">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>BUZO BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>
-                    <!-- BUZO2 -->
-                    <article class = "card">    
-                            <img src="../img/tienda/buzo2.jpg" alt="buzo">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>BUZO BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>
-                        <!-- VASO -->
-                    <article class = "card">
-                            <img src="../img/tienda/vaso.png" alt="vaso">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>VASO BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>
-                    <!-- GORRA -->
-                    <article class = "card">
-                            <img src="../img/tienda/gorra.jpg" alt="gorra">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>GORRA BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>
-                    <!-- CAMPERA -->
-                    <article class = "card">    
-                            <img src="../img/tienda/campera.jpg" alt="campera">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>CAMPERA BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>
-                    <!-- PANTALON -->
-                    <article class = "card">
-                            <img src="../img/tienda/pantalon.jpg" alt="pantalon">
-                        <div class = "card__texto card__texto__tienda">
-                            <p>PANTALON BAD BUNNY</p>
-                            <p>$1000</p>
-                            <button>COMPRAR</button>
-                        </div>
-                    </article>    
-                </section>
-        </main>
-        <footer>
-            <h4>Seguinos en nuestras redes sociales</h4>
-           <ul>
-               <li>
-                <a href="https://www.facebook.com/BadBunnyOfficial" target="_blank" class="footer__icono"  id = "facebook"><i class="fa-brands fa-facebook-square"></i></a>
-                </li>
-               <li>
-                   <a href="https://twitter.com/sanbenito" target="_blank" class="footer__icono" id = "twitter"><i class="fa-brands fa-twitter-square"></i></a>
-                </li>
-               <li>
-                   <a href="https://www.instagram.com/badbunnypr/" target="_blank" class="footer__icono" id = "instagram"><i class="fa-brands fa-instagram-square"></i></a>
-                </li>
-               <li>
-                   <a href="https://www.youtube.com/c/BadBunnyPR" target="_blank" class="footer__icono" id = "youtube"><i class="fa-brands fa-youtube-square"></i></a>
-                </li> 
-           </ul>
-        </footer>
-                <!-- Boostrap -->
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+    <main>
+      <h1>TIENDA</h1>
+      <section class="card__group container">
+        <div class="row g-4">
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img src="../img/tienda/buzo.jpg" alt="buzo" class="img-fluid" />
+            <div class="card__texto card__texto__tienda">
+              <p>BUZO BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <!-- BUZO2 -->
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img src="../img/tienda/buzo2.jpg" alt="buzo" class="img-fluid" />
+            <div class="card__texto card__texto__tienda">
+              <p>BUZO BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <!-- VASO -->
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img src="../img/tienda/vaso.png" alt="vaso" class="img-fluid" />
+            <div class="card__texto card__texto__tienda">
+              <p>VASO BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <!-- GORRA -->
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img src="../img/tienda/gorra.jpg" alt="gorra" class="img-fluid" />
+            <div class="card__texto card__texto__tienda">
+              <p>GORRA BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <!-- CAMPERA -->
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img
+              src="../img/tienda/campera.jpg"
+              alt="campera"
+              class="text-center img-fluid"
+            />
+            <div class="card__texto card__texto__tienda">
+              <p>CAMPERA BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+          <!-- PANTALON -->
+          <article class="card container col-sm-12 col-md-6 col-xl-4">
+            <img
+              src="../img/tienda/pantalon.jpg"
+              alt="pantalon"
+              class="img-fluid"
+            />
+            <div class="card__texto card__texto__tienda">
+              <p>PANTALON BAD BUNNY</p>
+              <p>$1000</p>
+              <button class="boton">COMPRAR</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>Seguinos en nuestras redes sociales</h4>
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/BadBunnyOfficial"
+            target="_blank"
+            class="footer__icono"
+            id="facebook"
+            ><i class="fa-brands fa-facebook-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/sanbenito"
+            target="_blank"
+            class="footer__icono"
+            id="twitter"
+            ><i class="fa-brands fa-twitter-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/badbunnypr/"
+            target="_blank"
+            class="footer__icono"
+            id="instagram"
+            ><i class="fa-brands fa-instagram-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/c/BadBunnyPR"
+            target="_blank"
+            class="footer__icono"
+            id="youtube"
+            ><i class="fa-brands fa-youtube-square"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Boostrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
