@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img id = "header__logo" src="/img/logo-nav.png" alt="logo bad bunny"></a>
+              <a class="navbar-brand" href="/index.html"><img id = "header__logo" src="/img/logo-nav.png" alt="logo bad bunny"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -47,20 +47,22 @@
         <main>
             <h1>CONTACTO</h1>
             <section>
-                <form action="">
+                <form action="" class="container">
                     <fieldset>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Benito Martinez">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Benito Martinez">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                        <input type="submit" class = "form-control btn " id = "input__enviar">
                     </fieldset>
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="bad@bunny.com">
-                    </fieldset>
-                    <fieldset>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" cols="30" rows="10"></textarea>
-                    </fieldset>
-                    <input type="button" value="Enviar" id="input__enviar">
                 </form>
             </section>
         </main>
