@@ -186,9 +186,11 @@ main h1 {
     padding: 4px;
     font-family:'Roboto Mono',monospace;
     font-size: 2rem;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
-
+#boton-tienda {
+    margin-bottom: 5px; 
+}
 .boton:hover {
     background: black;
     color: white;
@@ -198,9 +200,12 @@ main h1 {
 
 .section__tour {
     display: flex;
-    align-self: center;
+    flex-direction: row-reverse;
+    align-self: baseline;
     justify-self: center;
     align-items: baseline;
+    width: 75%;
+    margin-top: 30px;
 }
 
 
@@ -216,15 +221,20 @@ main h1 {
     font-size: 2rem;
     text-align: center;
     /* margin: 0 auto; */
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content: center;
+    justify-content: center;
+    align-items:stretch;
+    width: 125%;
 }
 
 
 
 #tour__lugar{
     color: orangered;
+    /* align-self: baseline; */
+    
     
 }
 
@@ -236,38 +246,48 @@ main h1 {
 /* CONTACTO */
 
 form {
-    margin: 3rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
     font-family:'Roboto Mono',monospace;
+    font-size: 2rem;
+
+
 }
 
 label {
     display: block;
     text-align: center;
+    
 }
 fieldset {
     border: none;
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid gray;
-    width: 64rem;
-    font-size: 2rem;
+.form-control {
+    font-size: 3rem;
 }
 
+input {
+    /* border: none; */
+    /* border-bottom: 1px solid gray; */
+    text-align: center;
+    width: 50%;
+    height: 50%;
+
+}
+input::placeholder {
+    font-size: 2rem;
+}
 input:hover{
     background:  #eee;
     transition: 1s;
 }
 
 textarea {
-    width: 64rem;
+
     font-size: 2rem;
 }
 
@@ -280,9 +300,11 @@ textarea:hover{
     border-bottom: none;
     font-family:'Roboto Mono', monospace ;
     font-size: 3rem;
-   background: none;
-   border: 1px solid black;
-   border-radius: 3px;
+    padding: 20px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
+
 }
 
 #input__enviar:hover {
@@ -336,3 +358,12 @@ footer ul li {
     color:red
 }
 
+
+@media only screen and (min-width: 500px) and (max-width: 700px){
+    .section__tour ul li{
+        font-size:1.5rem
+    }
+    .section__tour button {
+        font-size: 1.5rem;
+    }
+} 
