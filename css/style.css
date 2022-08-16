@@ -27,13 +27,17 @@ header{
 }
 
 
+#navbarNav {
+    justify-content: flex-end;
+}
+
 
 .nav-link{
 
-    /* font-size: 15rem; */
     color: black;
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
+
 } 
 
 .nav-link:hover{
