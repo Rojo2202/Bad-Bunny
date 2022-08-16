@@ -1,373 +1,340 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-html{
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* Header */
-header{
-    width: 100%;
-    max-width: 100%;
-    border-bottom:2px solid gray;
-    padding: 2rem;
-
-
+header {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 2px solid gray;
+  padding: 2rem;
 }
-
 
 #header__logo {
-    width: auto;
-    height: 8rem;
+  width: auto;
+  height: 8rem;
 }
-
 
 #navbarNav {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
+.nav-link {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+}
 
-.nav-link{
-
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2rem;
-
-} 
-
-.nav-link:hover{
-    border-bottom: 1px solid black;
-} 
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
 
 /* Main */
 /* Home */
 main {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
+
 main h1 {
-    font-size: 12rem;
-    /* padding-top: 3%; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    /* margin: 2rem; */
-
-    /* Animaciones */
-    text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
+  font-size: 12rem;
+  /* padding-top: 3%; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  /* margin: 2rem; */
+  /* Animaciones */
+  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
 }
-
 
 .main__descripcion {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin: 5px;
 }
 
 .main__descripcion p {
-   
-    font-size: 2rem;
-    display: inline;
-    font-family: 'Roboto Mono',monospace;
-    /* color: white; */
+  font-size: 2rem;
+  display: inline;
+  font-family: "Roboto Mono", monospace;
+  /* color: white; */
 }
-.main__img{
-    max-width: 100%;
+
+.main__img {
+  max-width: 100%;
 }
 
 .main__galeria {
-    padding: 20px;
+  padding: 20px;
 }
 
 .item {
-
-
-    background-position: top;
-    background-size: cover;
-    border-radius: 3px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-    height: 32em;
-
-
+  background-position: top;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  height: 32em;
 }
+
 .item:hover {
-    transform: scale(1.1,1.1);
-    transition: 0.5s;
-    max-width: 100%;
-    max-height: 100%;
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+  max-width: 100%;
+  max-height: 100%;
 }
 
+/* FOTOS */
+.item1 {
+  background-image: url(../img/galeria/item1.jpg);
+  grid-area: img1;
+  /* grid-column: 1/2;
+  grid-row:1/3; */
+}
 
- /* FOTOS */
+.item2 {
+  background-image: url(../img/galeria/item2.jpg);
+  grid-area: img2;
+  /* background-position: center; */
+  /* grid-column: 2/4;
+  grid-row:1/3 */
+}
 
- .item1 {
-    background-image: url(../img/galeria/item1.jpg);
-    grid-area:img1;
-    /* grid-column: 1/2;
-    grid-row:1/3; */
- }
- .item2 {
-    background-image: url(../img/galeria/item2.jpg);
-    grid-area:img2;
-    /* background-position: center; */
-    /* grid-column: 2/4;
-    grid-row:1/3 */
+.item3 {
+  background-image: url(../img/galeria/item3.jpg);
+  grid-area: img3;
+  /* grid-column: 1/2;
+  grid-row:3/3; */
+}
 
- }
- .item3 {
-    background-image: url(../img/galeria/item3.jpg);
-    grid-area:img3;
-    /* grid-column: 1/2;
-    grid-row:3/3; */
+.item4 {
+  background-image: url(../img/galeria/item4.jpg);
+  grid-area: img4;
+  /* grid-column: 2/3;
+  grid-row:3/3; */
+}
 
- }
- .item4 {
-    background-image: url(../img/galeria/item4.jpg);
-    grid-area:img4;
-    /* grid-column: 2/3;
-    grid-row:3/3; */
-
- }
- .item5 {
-    background-image: url(../img/galeria/item5.jpg);
-    grid-area:img5;
-    background-position: center;
-    /* grid-column: 3/3;
-    grid-row:3/3; */
-
- }
-
-
-
-
-
+.item5 {
+  background-image: url(../img/galeria/item5.jpg);
+  grid-area: img5;
+  background-position: center;
+  /* grid-column: 3/3;
+  grid-row:3/3; */
+}
 
 /* MUSICA / TIENDA */
-
-
-
-
 .card:hover {
-    background: rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
-
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }
+
 .card a {
-    text-align: center;
+  text-align: center;
 }
-.card img {
-    height: 42em;
-    width: 42em;
-    /* display: block; */
-    /* overflow: hidden; */
-    padding:20px;
-    margin: 0 auto;
 
+.card img {
+  height: 42em;
+  width: 42em;
+  /* display: block; */
+  /* overflow: hidden; */
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .card__texto {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1rem;
 }
+
 .card p {
-    font-family: 'Roboto Mono',monospace;
-    color: black;
-    font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  font-size: 2rem;
 }
 
 .boton {
-    background: none;
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 4px;
-    font-family:'Roboto Mono',monospace;
-    font-size: 2rem;
-    /* margin-bottom: 5px; */
+  background: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 4px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  /* margin-bottom: 5px; */
 }
+
 #boton-tienda {
-    margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
+
 .boton:hover {
-    background: black;
-    color: white;
-    transition: 0.5s;
-} */
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
 /* TOUR */
-
 .section__tour {
-    display: flex;
-    flex-direction: row-reverse;
-    align-self: baseline;
-    justify-self: center;
-    align-items: baseline;
-    width: 75%;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: baseline;
+  justify-self: center;
+  align-items: baseline;
+  width: 75%;
+  margin-top: 30px;
 }
 
-
-
-.section__tour ul li{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-content: center; */
-    /* padding: 3rem; */
-    /* text-align: center; */
-    font-family: 'Roboto Mono', monospace;
-    list-style: none;
-    font-size: 2rem;
-    text-align: center;
-    /* margin: 0 auto; */
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    align-items:stretch;
-    width: 125%;
+.section__tour ul li {
+  font-family: "Roboto Mono", monospace;
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 125%;
 }
 
-
-
-#tour__lugar{
-    color: orangered;
-    /* align-self: baseline; */
-    
-    
+#tour__lugar {
+  color: orangered;
+  /* align-self: baseline; */
 }
 
 .section__tour button {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 
-
 /* CONTACTO */
-
 form {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family:'Roboto Mono',monospace;
-    font-size: 2rem;
-
-
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
 }
 
 label {
-    display: block;
-    text-align: center;
-    
+  display: block;
+  text-align: center;
 }
+
 fieldset {
-    border: none;
+  border: none;
 }
 
 .form-control {
-    font-size: 3rem;
+  font-size: 2rem;
 }
 
 input {
-    /* border: none; */
-    /* border-bottom: 1px solid gray; */
-    text-align: center;
-    width: 50%;
-    height: 50%;
+  /* border: none; */
+  /* border-bottom: 1px solid gray; */
+  text-align: center;
+  width: 50%;
+  height: 50%;
+}
 
-}
 input::placeholder {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-input:hover{
-    background:  #eee;
-    transition: 1s;
+
+input:hover {
+  background: #eee;
+  transition: 1s;
 }
 
 textarea {
-
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-textarea:hover{
-    background: #eee;
-    transition: 1s;
+textarea:hover {
+  background: #eee;
+  transition: 1s;
 }
 
 #input__enviar {
-    border-bottom: none;
-    font-family:'Roboto Mono', monospace ;
-    font-size: 3rem;
-    padding: 20px;
-    background: none;
-    border: 1px solid black;
-    border-radius: 3px;
-
+  border-bottom: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  padding: 20px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 #input__enviar:hover {
-    background: black;
-    color: white;
-    transition: 0.5s;
+  background: black;
+  color: white;
+  transition: 0.5s;
 }
 
 /* FOOTEER */
 footer {
-    text-align: center;
-    border-top:2px solid gray;
-    /* display: block; */
-
+  text-align: center;
+  border-top: 2px solid gray;
+  /* display: block; */
 }
+
 footer h4 {
-    font-family:'Roboto Mono', monospace ;
-    font-size: 3rem;
-    margin: 3rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  margin: 3rem;
 }
+
 footer ul {
-    margin: 3rem;
+  margin: 3rem;
 }
+
 footer ul li {
-    display: inline;
-
-    padding: 4px;
-
-}
-.footer__icono{
-    text-decoration: none;
-    font-size: 10rem;
-    color: black;
+  display: inline;
+  padding: 4px;
 }
 
-.footer__icono:hover{
-    transition: 2s;
+.footer__icono {
+  text-decoration: none;
+  font-size: 10rem;
+  color: black;
 }
 
-#facebook:hover{
-    color: blue;
-}
-#twitter:hover{
-    color: rgb(29, 161 ,242);
-}
-#instagram:hover{
-    color: rgb(193, 53, 132)
+.footer__icono:hover {
+  transition: 2s;
 }
 
-#youtube:hover{
-    color:red
+#facebook:hover {
+  color: blue;
 }
 
+#twitter:hover {
+  color: rgb(29, 161, 242);
+}
 
-@media only screen and (min-width: 500px) and (max-width: 700px){
-    .section__tour ul li{
-        font-size:1.5rem
-    }
-    .section__tour button {
-        font-size: 1.5rem;
-    }
-} 
+#instagram:hover {
+  color: rgb(193, 53, 132);
+}
+
+#youtube:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .section__tour ul li {
+    font-size: 1.5rem;
+  }
+  .section__tour button {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
