@@ -1,0 +1,27 @@
+$font-texto : 'Roboto Mono',monospace;
+
+header {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 2px solid gray;
+    padding: 2rem;
+
+    img {
+        width: auto;
+        height: 8rem;
+    }
+    #navbarNav {
+        justify-content: flex-end;
+    }
+    ul{
+        li{
+            
+                color: black;
+                font-family: $font-texto;
+                font-size: 2rem;
+                &:hover {
+                    border-bottom: 1px solid black;
+                    } 
+        }
+    }
+}

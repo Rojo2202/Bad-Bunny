@@ -1,0 +1,43 @@
+/* FOOTEER */
+footer {
+    text-align: center;
+    border-top: 2px solid gray;
+    h4 {
+        font-family: $font-texto;
+        font-size: 3rem;
+        margin: 3rem;
+    }
+    ul {
+        margin: 3rem;
+        li {
+            display: inline;
+            padding: 4px;
+        }
+    }
+    .footer__icono {
+        text-decoration: none;
+        font-size: 10rem;
+        color: black;
+        &:hover {
+            transition: 1.5s;
+        }
+    }
+    
+    #facebook:hover {
+        color: blue;
+    }
+    
+    #twitter:hover {
+        color: rgb(29, 161, 242);
+    }
+    
+    #instagram:hover {
+        color: rgb(193, 53, 132)
+    }
+    
+    #youtube:hover {
+        color: red
+    }
+    
+}
+

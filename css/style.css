@@ -10,73 +10,8 @@ html {
   font-size: 62.5%;
 }
 
-/* Header */
-header {
-  width: 100%;
-  max-width: 100%;
-  border-bottom: 2px solid gray;
-  padding: 2rem;
-}
-
-#header__logo {
-  width: auto;
-  height: 8rem;
-}
-
-#navbarNav {
-  justify-content: flex-end;
-}
-
-.nav-link {
-  color: black;
-  font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
-}
-
-.nav-link:hover {
-  border-bottom: 1px solid black;
-}
-
 /* Main */
 /* Home */
-main {
-  margin-bottom: 2rem;
-}
-
-main h1 {
-  font-size: 12rem;
-  /* padding-top: 3%; */
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
-  /* margin: 2rem; */
-  /* Animaciones */
-  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
-}
-
-.main__descripcion {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  margin: 5px;
-}
-
-.main__descripcion p {
-  font-size: 2rem;
-  display: inline;
-  font-family: "Roboto Mono", monospace;
-  /* color: white; */
-}
-
-.main__img {
-  max-width: 100%;
-}
-
-.main__galeria {
-  padding: 20px;
-}
-
 .item {
   background-position: top;
   background-size: cover;
@@ -280,54 +215,6 @@ textarea:hover {
   transition: 0.5s;
 }
 
-/* FOOTEER */
-footer {
-  text-align: center;
-  border-top: 2px solid gray;
-  /* display: block; */
-}
-
-footer h4 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 3rem;
-  margin: 3rem;
-}
-
-footer ul {
-  margin: 3rem;
-}
-
-footer ul li {
-  display: inline;
-  padding: 4px;
-}
-
-.footer__icono {
-  text-decoration: none;
-  font-size: 10rem;
-  color: black;
-}
-
-.footer__icono:hover {
-  transition: 2s;
-}
-
-#facebook:hover {
-  color: blue;
-}
-
-#twitter:hover {
-  color: rgb(29, 161, 242);
-}
-
-#instagram:hover {
-  color: rgb(193, 53, 132);
-}
-
-#youtube:hover {
-  color: red;
-}
-
 @media only screen and (min-width: 500px) and (max-width: 700px) {
   .section__tour ul li {
     font-size: 1.5rem;
@@ -335,6 +222,83 @@ footer ul li {
   .section__tour button {
     font-size: 1.5rem;
   }
+}
+header {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 2px solid gray;
+  padding: 2rem;
+}
+header img {
+  width: auto;
+  height: 8rem;
+}
+header #navbarNav {
+  justify-content: flex-end;
+}
+header ul li {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+}
+header ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+main h1 {
+  font-size: 12rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
+}
+main p {
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+main img {
+  max-width: 100%;
+}
+
+/* FOOTEER */
+footer {
+  text-align: center;
+  border-top: 2px solid gray;
+}
+footer h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  margin: 3rem;
+}
+footer ul {
+  margin: 3rem;
+}
+footer ul li {
+  display: inline;
+  padding: 4px;
+}
+footer .footer__icono {
+  text-decoration: none;
+  font-size: 10rem;
+  color: black;
+}
+footer .footer__icono:hover {
+  transition: 1.5s;
+}
+footer #facebook:hover {
+  color: blue;
+}
+footer #twitter:hover {
+  color: rgb(29, 161, 242);
+}
+footer #instagram:hover {
+  color: rgb(193, 53, 132);
+}
+footer #youtube:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
