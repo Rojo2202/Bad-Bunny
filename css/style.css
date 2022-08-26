@@ -10,8 +10,54 @@ html {
   font-size: 62.5%;
 }
 
-/* Main */
-/* Home */
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .section__tour ul li {
+    font-size: 1.5rem;
+  }
+  .section__tour button {
+    font-size: 1.5rem;
+  }
+}
+header {
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 2px solid gray;
+  padding: 2rem;
+}
+header img {
+  width: auto;
+  height: 8rem;
+}
+header #navbarNav {
+  justify-content: flex-end;
+}
+header ul li {
+  color: blue;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+}
+header ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+main h1 {
+  font-size: 12rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
+}
+main p {
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+main img {
+  max-width: 100%;
+}
+
 .item {
   background-position: top;
   background-size: cover;
@@ -19,7 +65,6 @@ html {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   height: 32em;
 }
-
 .item:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
@@ -30,42 +75,93 @@ html {
 /* FOTOS */
 .item1 {
   background-image: url(../img/galeria/item1.jpg);
-  grid-area: img1;
-  /* grid-column: 1/2;
-  grid-row:1/3; */
 }
 
 .item2 {
   background-image: url(../img/galeria/item2.jpg);
-  grid-area: img2;
-  /* background-position: center; */
-  /* grid-column: 2/4;
-  grid-row:1/3 */
 }
 
 .item3 {
   background-image: url(../img/galeria/item3.jpg);
-  grid-area: img3;
-  /* grid-column: 1/2;
-  grid-row:3/3; */
 }
 
 .item4 {
   background-image: url(../img/galeria/item4.jpg);
-  grid-area: img4;
-  /* grid-column: 2/3;
-  grid-row:3/3; */
 }
 
 .item5 {
   background-image: url(../img/galeria/item5.jpg);
-  grid-area: img5;
-  background-position: center;
-  /* grid-column: 3/3;
-  grid-row:3/3; */
 }
 
-/* MUSICA / TIENDA */
+/* FOOTEER */
+footer {
+  text-align: center;
+  border-top: 2px solid gray;
+}
+footer h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3rem;
+  margin: 3rem;
+}
+footer ul {
+  margin: 3rem;
+}
+footer ul li {
+  display: inline;
+  padding: 4px;
+}
+footer .footer__icono {
+  text-decoration: none;
+  font-size: 10rem;
+  color: black;
+}
+footer .footer__icono:hover {
+  transition: 1.5s;
+}
+footer #facebook:hover {
+  color: blue;
+}
+footer #twitter:hover {
+  color: rgb(29, 161, 242);
+}
+footer #instagram:hover {
+  color: rgb(193, 53, 132);
+}
+footer #youtube:hover {
+  color: red;
+}
+
+/* TOUR */
+.section__tour {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  width: 75%;
+  margin-top: 30px;
+}
+.section__tour ul li {
+  font-family: "Roboto Mono", monospace;
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.section__tour button {
+  padding: 0 3rem;
+}
+
+#tour__lugar {
+  color: orangered;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .section__tour ul li {
+    font-size: 1.5rem;
+  }
+  .section__tour button {
+    font-size: 1.5rem;
+  }
+}
 .card:hover {
   background: rgba(0, 0, 0, 0.1);
   transition: 0.5s;
@@ -117,39 +213,6 @@ html {
   transition: 0.5s;
 }
 
-/* TOUR */
-.section__tour {
-  display: flex;
-  flex-direction: row-reverse;
-  align-self: baseline;
-  justify-self: center;
-  align-items: baseline;
-  width: 75%;
-  margin-top: 30px;
-}
-
-.section__tour ul li {
-  font-family: "Roboto Mono", monospace;
-  list-style: none;
-  font-size: 2rem;
-  text-align: center;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  width: 125%;
-}
-
-#tour__lugar {
-  color: orangered;
-  /* align-self: baseline; */
-}
-
-.section__tour button {
-  padding: 0 3rem;
-}
-
-/* CONTACTO */
 form {
   padding: 3rem;
   display: flex;
@@ -159,44 +222,35 @@ form {
   font-family: "Roboto Mono", monospace;
   font-size: 2rem;
 }
-
-label {
+form label {
   display: block;
   text-align: center;
 }
-
-fieldset {
+form fieldset {
   border: none;
 }
-
-.form-control {
-  font-size: 2rem;
-}
-
-input {
-  /* border: none; */
-  /* border-bottom: 1px solid gray; */
+form input {
   text-align: center;
   width: 50%;
   height: 50%;
 }
-
-input::placeholder {
+form input::placeholder {
   font-size: 2rem;
 }
-
-input:hover {
+form input:hover {
+  background: #eee;
+  transition: 1s;
+}
+form textarea {
+  font-size: 2rem;
+}
+form textarea:hover {
   background: #eee;
   transition: 1s;
 }
 
-textarea {
+.form-control {
   font-size: 2rem;
-}
-
-textarea:hover {
-  background: #eee;
-  transition: 1s;
 }
 
 #input__enviar {
@@ -213,92 +267,6 @@ textarea:hover {
   background: black;
   color: white;
   transition: 0.5s;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-  .section__tour ul li {
-    font-size: 1.5rem;
-  }
-  .section__tour button {
-    font-size: 1.5rem;
-  }
-}
-header {
-  width: 100%;
-  max-width: 100%;
-  border-bottom: 2px solid gray;
-  padding: 2rem;
-}
-header img {
-  width: auto;
-  height: 8rem;
-}
-header #navbarNav {
-  justify-content: flex-end;
-}
-header ul li {
-  color: black;
-  font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
-}
-header ul li:hover {
-  border-bottom: 1px solid black;
-}
-
-main {
-  margin-bottom: 2rem;
-}
-main h1 {
-  font-size: 12rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
-  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
-}
-main p {
-  font-size: 2rem;
-  font-family: "Roboto Mono", monospace;
-  text-align: center;
-}
-main img {
-  max-width: 100%;
-}
-
-/* FOOTEER */
-footer {
-  text-align: center;
-  border-top: 2px solid gray;
-}
-footer h4 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 3rem;
-  margin: 3rem;
-}
-footer ul {
-  margin: 3rem;
-}
-footer ul li {
-  display: inline;
-  padding: 4px;
-}
-footer .footer__icono {
-  text-decoration: none;
-  font-size: 10rem;
-  color: black;
-}
-footer .footer__icono:hover {
-  transition: 1.5s;
-}
-footer #facebook:hover {
-  color: blue;
-}
-footer #twitter:hover {
-  color: rgb(29, 161, 242);
-}
-footer #instagram:hover {
-  color: rgb(193, 53, 132);
-}
-footer #youtube:hover {
-  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,10 @@
-$font-texto : 'Roboto Mono',monospace;
+
+$estilos: (
+    color: blue,
+    font-family: ('Roboto Mono',monospace),
+    font-size : 2rem,
+    );
+    
 
 header {
     width: 100%;
@@ -16,12 +22,12 @@ header {
     ul{
         li{
             
-                color: black;
-                font-family: $font-texto;
-                font-size: 2rem;
+                color: map-get($estilos, color);
+                font-family: map-get($estilos, font-family);
+                font-size: map-get($estilos, font-size);
                 &:hover {
                     border-bottom: 1px solid black;
-                    } 
-        }
+                }
     }
+}
 }

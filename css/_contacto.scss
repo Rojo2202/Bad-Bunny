@@ -1,0 +1,72 @@
+form {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+
+    label {
+        display: block;
+        text-align: center;
+
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    input {
+
+        text-align: center;
+        width: 50%;
+        height: 50%;
+
+        &::placeholder {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background: #eee;
+            transition: 1s;
+        }
+    }
+
+    textarea {
+        font-size: 2rem;
+
+        &:hover {
+            background: #eee;
+            transition: 1s;
+        }
+    }
+
+
+}
+
+
+
+
+
+.form-control {
+    font-size: 2rem;
+}
+
+
+#input__enviar {
+    border-bottom: none;
+    font-family: $font-texto;
+    font-size: 3rem;
+    padding: 20px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+#input__enviar:hover {
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
