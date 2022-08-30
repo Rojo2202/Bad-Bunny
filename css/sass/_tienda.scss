@@ -1,0 +1,44 @@
+.card {
+    margin-bottom: 20px;
+    width: 42rem;
+    p {
+        font-family: $font-texto;
+        font-size: $p-size;
+    }
+    a {
+        text-align: center;
+    }
+    img {
+        height: 42em;
+        width: 42em;
+        padding: 20px;
+        margin: 0 auto;
+    
+    }
+    .card p {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        font-size: 2rem;
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    
+    }
+}
+
+
+
+
+.card__texto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+#boton-tienda {
+    margin-bottom: 5px;
+}
+
+

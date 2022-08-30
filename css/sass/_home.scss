@@ -1,15 +1,8 @@
-$font-title: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
-main {
+.home {
     margin-bottom: 2rem;
-    h1 {
-        font-size: 12rem;
-        font-family: $font-title;
-        text-align: center;
-        text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
-    }
     p {
-        font-size: 2rem;
+        font-size: $p-size;
         font-family: 'Roboto Mono', monospace;
         text-align: center;
     }
@@ -17,7 +10,6 @@ main {
         max-width: 100%;
     }
 }
-
 .item {
 
     // padding: 20px;

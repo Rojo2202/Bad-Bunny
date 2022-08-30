@@ -1,32 +1,42 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
-
+$font-title: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $font-texto : 'Roboto Mono',monospace;
-
+$p-size: 2rem;
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 62.5%;
 }
-
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-    .section__tour ul li {
-        font-size: 1.5rem
-    }
-
-    .section__tour button {
-        font-size: 1.5rem;
-    }
+h1 {
+    font-size: 12em;
+    font-family: $font-title;
+    text-align: center;
+    text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
 }
 
-@import "header";
-@import "home";
-@import "footer";
-@import "tour";
-@import "tienda";
-@import "contacto";
+.boton {
+    background: none;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 4px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    /* margin-bottom: 5px; */
+}
+
+.boton:hover {
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+@import "sass/header";
+@import "sass/home";
+@import "sass/footer";
+@import "sass/tour";
+@import "sass/tienda";
+@import "sass/contacto";

@@ -10,18 +10,33 @@ html {
   font-size: 62.5%;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-  .section__tour ul li {
-    font-size: 1.5rem;
-  }
-  .section__tour button {
-    font-size: 1.5rem;
-  }
+h1 {
+  font-size: 12em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
 }
+
+.boton {
+  background: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 4px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  /* margin-bottom: 5px; */
+}
+
+.boton:hover {
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
 header {
   width: 100%;
   max-width: 100%;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid black;
   padding: 2rem;
 }
 header img {
@@ -40,21 +55,15 @@ header ul li:hover {
   border-bottom: 1px solid black;
 }
 
-main {
+.home {
   margin-bottom: 2rem;
 }
-main h1 {
-  font-size: 12rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
-  text-shadow: 5px 5px 1px rgba(212, 212, 212, 0.658);
-}
-main p {
+.home p {
   font-size: 2rem;
   font-family: "Roboto Mono", monospace;
   text-align: center;
 }
-main img {
+.home img {
   max-width: 100%;
 }
 
@@ -96,7 +105,7 @@ main img {
 /* FOOTEER */
 footer {
   text-align: center;
-  border-top: 2px solid gray;
+  border-top: 2px solid black;
 }
 footer h4 {
   font-family: "Roboto Mono", monospace;
@@ -131,53 +140,58 @@ footer #youtube:hover {
   color: red;
 }
 
-/* TOUR */
 .section__tour {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: column;
+  justify-items: space-between;
+  align-items: stretch;
   align-content: center;
-  width: 75%;
-  margin-top: 30px;
+  align-self: center;
 }
-.section__tour ul li {
+
+.tour {
   font-family: "Roboto Mono", monospace;
-  list-style: none;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
+  border-bottom: 2px solid gray;
+  padding: 30px;
+  border-radius: 2px;
+  justify-content: center;
 }
-.section__tour button {
-  padding: 0 3rem;
+.tour li {
+  display: inline-block;
+  text-decoration: none;
 }
 
 #tour__lugar {
-  color: orangered;
+  color: rgba(200, 73, 22, 0.932);
 }
 
-@media only screen and (min-width: 500px) and (max-width: 700px) {
-  .section__tour ul li {
-    font-size: 1.5rem;
-  }
-  .section__tour button {
-    font-size: 1.5rem;
-  }
+.card {
+  margin-bottom: 20px;
+  width: 42rem;
+}
+.card p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+}
+.card a {
+  text-align: center;
+}
+.card img {
+  height: 42em;
+  width: 42em;
+  padding: 20px;
+  margin: 0 auto;
+}
+.card .card p {
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  font-size: 2rem;
 }
 .card:hover {
   background: rgba(0, 0, 0, 0.1);
   transition: 0.5s;
-}
-
-.card a {
-  text-align: center;
-}
-
-.card img {
-  height: 42em;
-  width: 42em;
-  /* display: block; */
-  /* overflow: hidden; */
-  padding: 20px;
-  margin: 0 auto;
 }
 
 .card__texto {
@@ -187,30 +201,8 @@ footer #youtube:hover {
   margin-top: 1rem;
 }
 
-.card p {
-  font-family: "Roboto Mono", monospace;
-  color: black;
-  font-size: 2rem;
-}
-
-.boton {
-  background: none;
-  border: 1px solid black;
-  border-radius: 2px;
-  padding: 4px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
-  /* margin-bottom: 5px; */
-}
-
 #boton-tienda {
   margin-bottom: 5px;
-}
-
-.boton:hover {
-  background: black;
-  color: white;
-  transition: 0.5s;
 }
 
 form {

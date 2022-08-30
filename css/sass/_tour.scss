@@ -1,0 +1,26 @@
+.section__tour {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+}
+
+.tour {
+    font-family: $font-texto;
+    font-size: 3rem;
+    text-align: center;
+    li {
+        display: inline-block;
+        text-decoration: none;
+    }
+    border-bottom: 2px solid gray;
+    padding: 30px;
+    border-radius: 2px;
+    justify-content: center;
+    
+}
+#tour__lugar {
+    color: rgba(200, 73, 22, 0.932);
+}
