@@ -34,6 +34,14 @@ h1 {
     color: white;
     transition: 0.5s;
 }
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 8em;
+    }
+}
+
+
 @import "sass/header";
 @import "sass/home";
 @import "sass/footer";

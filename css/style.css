@@ -33,6 +33,11 @@ h1 {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 8em;
+  }
+}
 header {
   width: 100%;
   max-width: 100%;
@@ -53,6 +58,11 @@ header ul li {
 }
 header ul li:hover {
   border-bottom: 1px solid black;
+}
+
+.navbar-toggler-icon {
+  border: none;
+  font-size: 2rem;
 }
 
 .home {
@@ -76,6 +86,7 @@ header ul li:hover {
 .item:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
+  border: none;
 }
 
 /* FOTOS */
@@ -104,7 +115,7 @@ footer {
   text-align: center;
   border-top: 2px solid black;
 }
-footer h4 {
+footer p {
   font-family: "Roboto Mono", monospace;
   font-size: 3rem;
   margin: 3rem;
